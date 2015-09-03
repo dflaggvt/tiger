@@ -45,7 +45,7 @@ group :development do
   gem 'spring'
 
   # Add bootstrap gem
-  gem 'bootstrap-sass', '~> 3.3.5'
+  gem 'bootstrap-sass', '~> 3.1.1.0'
   gem 'autoprefixer-rails'
 
   # Add authentication gem
