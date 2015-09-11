@@ -1,0 +1,9 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Emailaddress:</strong>
+  <%= @waiting_user.emailaddress %>
+</p>
+
+<%= link_to 'Edit', edit_waiting_user_path(@waiting_user) %> |
+<%= link_to 'Back', waiting_users_path %>

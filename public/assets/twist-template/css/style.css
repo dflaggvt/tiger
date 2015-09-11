@@ -303,7 +303,7 @@ video#bgvid {
 /*======================== PRELOADER END ========================*/
 
 /*======================== BUTTON ========================*/
-.btn {
+.tt-btn {
 	display: inline-block;
 	padding: 7px 30px !important;
 	text-transform: uppercase;
@@ -325,7 +325,7 @@ video#bgvid {
 	-o-transition: all .15s ease-out;
 	transition: all .15s ease-out;
 }
-.btn:after {
+.tt-btn:after {
 	content: "";
 	position: absolute;
 	right: 25px;
@@ -342,12 +342,12 @@ video#bgvid {
 	-o-transform: rotate(45deg);
 	transform: rotate(45deg);
 }
-.btn:hover {
+.tt-btn:hover {
 	background: transparent;
 	color: #fff;
 	padding-right: 50px !important;
 }
-.btn:hover:after {
+.tt-btn:hover:after {
 	opacity: 1
 }
 

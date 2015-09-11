@@ -1,6 +1,9 @@
 Rails.application.routes.draw do
-  resources :waitlists
-  root 'waitlists#index'
+  resources :waiting_users
+  #get 'static_pages/coming'
+  post 'static_pages/create'
+
+  root 'static_pages#coming'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

@@ -11,15 +11,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150901044437) do
+ActiveRecord::Schema.define(version: 20150911040334) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "waitlists", force: :cascade do |t|
-    t.string   "emailAddress"
+  create_table "waiting_users", force: :cascade do |t|
+    t.string   "emailaddress"
     t.datetime "created_at",   null: false
     t.datetime "updated_at",   null: false
   end
+
+  add_index "waiting_users", ["emailaddress"], name: "index_waiting_users_on_emailaddress", unique: true, using: :btree
 
 end
